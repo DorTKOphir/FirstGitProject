@@ -1,4 +1,3 @@
-package guitarshop;
 package pack;
 
 public class Piano {
