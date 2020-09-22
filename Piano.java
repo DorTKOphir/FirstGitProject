@@ -1,4 +1,5 @@
 package guitarshop;
+package pack;
 
 public class Piano {
 	private int id;
@@ -38,6 +39,10 @@ public class Piano {
 
 	public void setPrice(int price) {
 		this.price = price;
+	}
+	
+	public int getId() {
+		return this.id;
 	}
 
 	@Override

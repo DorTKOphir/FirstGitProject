@@ -4,14 +4,17 @@ public class Drums {
 	private static int count=1000;
 	private int id;
 	private int kind;
+	private int numOfDrums;
 	private String company;
 	private int price;
 	
 	public Drums(int kind, String company, int price)
+	public Drums(int numOfDrums, String company, int price)
 	{
 		this.id=count;
 		count++;
 		this.kind=kind;
+		this.numOfDrums=numOfDrums;
 		this.company=company;
 		this.price=price;
 	}
@@ -24,6 +27,7 @@ public class Drums {
 		else
 			to+="electric drums ; ";
 		to+="company: "+this.company+" ; price: "+this.price+" ; id: "+this.id+"\n";
+		String to="num of drums: "+this.numOfDrums+" ; company: "+this.company+" ; price: "+this.price+" ; id: "+this.id+"\n";
 		return to;
 	}
 	
@@ -36,6 +40,7 @@ public class Drums {
 	public int get_kind()
 	{
 		return this.kind;
+		return this.numOfDrums;
 	}
 	
 	public int get_price()
@@ -49,6 +54,7 @@ public class Drums {
 	}
 
 	public int get_id() {
+	public int getId() {
 		return this.id;
 	}
 }
