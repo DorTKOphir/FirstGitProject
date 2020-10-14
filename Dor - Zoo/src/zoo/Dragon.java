@@ -7,7 +7,7 @@ public class Dragon extends Animal {
 	public Dragon(String name, double flameDistance, int numOfHeads) {
 		super(name, false, 4);
 		this.flameDistance = flameDistance;
-		this.numOfHeads = this.numOfHeads;
+		this.numOfHeads = numOfHeads;
 	}
 
 	public double getFlameDistance() {
